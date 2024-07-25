@@ -22,13 +22,16 @@ const Navbar = () => {
             <div id='desktop' className='navbar hidden md:flex flex-nowrap'>
                 <ul className='navbar-nav flex-row gap-5'>
                     <li className='nav-item'>
-                        <a className='nav-link text-gray-500 text-xl tracking-wider font-semibold hover:text-orange-500 hover:ease-in ease-out duration-500 font-["Oswald"]' href='/home'>Home</a>
+                        <a className='nav-link text-gray-500 text-xl tracking-wider font-semibold hover:text-orange-500 ease-in-out duration-500 font-["Oswald"]' href='/home'>Home</a>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link text-gray-500 text-xl tracking-wider font-semibold hover:text-orange-500 hover:ease-in ease-out duration-500 font-["Oswald"]' href='/character'>Characters</a>
+                        <a className='nav-link text-gray-500 text-xl tracking-wider font-semibold hover:text-orange-500 ease-in-out duration-500 font-["Oswald"]' href='/about'>About Me</a>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link text-gray-500 text-xl tracking-wider font-semibold hover:text-orange-500 hover:ease-in ease-out duration-500 font-["Oswald"]' href='/blog'>Blog</a>
+                        <a className='nav-link text-gray-500 text-xl tracking-wider font-semibold hover:text-orange-500 ease-in-out duration-500 font-["Oswald"]' href='/project'>Projects</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a className='nav-link text-gray-500 text-xl tracking-wider font-semibold hover:text-orange-500 ease-in-out duration-500 font-["Oswald"]' href='/contact'>Contact Me</a>
                     </li>
                 </ul>
             </div>
@@ -40,10 +43,13 @@ const Navbar = () => {
                             <a className='nav-link text-gray-500 text-xl tracking-wider font-semibold hover:text-orange-500 ease-in-out duration-500 font-["Oswald"]' href='/home'>Home</a>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link text-gray-500 text-xl tracking-wider font-semibold hover:text-orange-500 ease-in-out duration-500 font-["Oswald"]' href='/character'>Characters</a>
+                            <a className='nav-link text-gray-500 text-xl tracking-wider font-semibold hover:text-orange-500 ease-in-out duration-500 font-["Oswald"]' href='/about'>About Me</a>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link text-gray-500 text-xl tracking-wider font-semibold hover:text-orange-500 ease-in-out duration-500 font-["Oswald"]' href='/blog' >Blog</a>
+                            <a className='nav-link text-gray-500 text-xl tracking-wider font-semibold hover:text-orange-500 ease-in-out duration-500 font-["Oswald"]' href='/project' >Projects</a>
+                        </li>
+                        <li className='nav-item'>
+                            <a className='nav-link text-gray-500 text-xl tracking-wider font-semibold hover:text-orange-500 ease-in-out duration-500 font-["Oswald"]' href='/contact' >Contact Me</a>
                         </li>
                     </ul>
                 </div>
