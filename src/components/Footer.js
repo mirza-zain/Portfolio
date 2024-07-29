@@ -2,14 +2,16 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className=' bg-gray-800'>
-      <h2 className='p-2 text-xl text-white text-center font-["Oswald"] font-semibold'>Follow My Journey</h2>
-      <ul className='flex justify-center'>
-          <a className='text-2xl text-cyan-400 hover:text-white ease-in-out duration-700 font-bold p-3 rounded-full' href='https://www.instagram.com/mirza_zain43/'><i className='ri-instagram-line'></i></a>
-          <a className='text-2xl text-cyan-400 hover:text-white ease-in-out duration-700 font-bold p-3 rounded-full' href='https://www.linkedin.com/in/mirza-zain269/'><i className='ri-linkedin-line'></i></a>
-          <a className='text-2xl text-cyan-400 hover:text-white ease-in-out duration-700 font-bold p-3 rounded-full' href='https://github.com/mirza-zain'><i className='ri-github-line'></i></a>
-      </ul>
-      <h3 className='text-center text-white text-lg'>Copyright  2024 - Mirza Zain</h3>
+    <footer className='w-full h-full bg-gray-800 p-4'>
+        <div className='flex flex-col items-center'>
+            <h2 className='font-["Oswald"] font-bold text-2xl text-cyan-600'>Follow Me</h2>
+            <ul className='flex text-2xl gap-4 text-white'>
+                <li className='hover:text-cyan-800 duration-500 ease-in-out'><a href='https://www.instagram.com/mirza_zain43/' target='_blank' rel='noreferrer'><i className="ri-instagram-fill"></i></a></li>
+                <li className='hover:text-cyan-800 duration-500 ease-in-out'><a href='https://www.linkedin.com/in/mirza-zain269/' target='_blank' rel='noreferrer'><i className="ri-linkedin-fill"></i></a></li>
+                <li className='hover:text-cyan-800 duration-500 ease-in-out'><a href='https://github.com/mirza-zain' target='_blank' rel='noreferrer'><i className="ri-github-fill"></i></a></li>
+            </ul>
+            <h4 className='text-sm md:text-lg font-medium font-sans text-cyan-200'>Desgined by "Mirza Zain"  ©copyright-2024</h4>
+        </div>
     </footer>
   )
 }

@@ -25,8 +25,7 @@ function App() {
           <ClimbingBoxLoader size={30} color={"#1B3047"} loading={loading} />
         </div>
       ) : (
-        <>
-          <Router>
+            <Router>
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
@@ -37,7 +36,6 @@ function App() {
             </Routes>
             <Footer />
           </Router>
-        </>
       )}
     </div>
   );

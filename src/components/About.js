@@ -13,7 +13,8 @@ const About = () => {
         deleteSpeed: 60
     })
     return (
-        <div className='w-full h-full md:h-screen flex flex-col md:flex-row p-4'>
+        <div className='overflow-hidden'>
+        <div className='w-full h-full md:h-screen flex flex-col md:flex-row p-3'>
             <div className='w-full md:w-1/2 bg-zinc-200'>
                 <div className='flex p-3'>
                 <div className='bg-yellow-400 w-8 md:w-10 h-8 md:h-10 rounded-full'></div>
@@ -30,11 +31,12 @@ const About = () => {
                 </p>
             </div>
             <div className='w-full md:w-1/2 flex flex-col bg-cyan-400 h-[80%] md:h-full'>
-                <Lottie animationData={face} className='w-full h-[60%] md:h-[40%] pt-3 md:pt-2'/>
+                <Lottie animationData={face} className='w-full h-[60%] md:h-1/2 pt-3 md:pt-2'/>
                 <a href={resume} className='px-8 py-3 font-bold text-lg rounded-md bg-yellow-400 mt-4 text-center' download>Resume</a>
-                <Lottie animationData={arrow} className='w-full h-[25%] -rotate-45 pt-0' />
+                <Lottie animationData={arrow} className='w-1/2 md:w-full h-[15%] md:h-[25%] -rotate-45 pt-0' />
             </div>
         </div>
+    </div>
     );
 }
 

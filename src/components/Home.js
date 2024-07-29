@@ -5,7 +5,6 @@ import blobright from '../animations/blobbottom.json';
 import blobleft from '../animations/blobtop.json';
 import About from './About';
 import Project from './Project';
-import Contact from './Contact';
 
 const Home = () => {
   const [text] = useTypewriter({
@@ -16,7 +15,7 @@ const Home = () => {
   });
 
   return (
-    <>
+    <div className='overflow-hidden'>
       <div className='w-full h-screen bg-zinc-200 relative'>
         <Lottie animationData={blobright} className='absolute bottom-0 right-0 w-1/2 h-1/2' />
         <div className='flex justify-center items-center h-full'>
@@ -31,8 +30,7 @@ const Home = () => {
       </div>
       <About />
       <Project />
-      <Contact />
-    </>
+    </div>
   );
 }
 

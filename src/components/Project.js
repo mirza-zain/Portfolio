@@ -2,25 +2,28 @@ import React from 'react';
 import pro1 from '../images/pro1.png';
 
 const Project = () => {
-  return (
-    <div className='w-full h-full bg-stone-600'>
-        <h2 className='text-center text-3xl p-3 font-bold font-["Playwrite_AR"]'>My Project's</h2>
-        <div className='w-full h-full flex gap-2 flex-wrap p-5'>
-            <div className='w-1/2 h-1/2 bg-zinc-500'>
-                <img className='w-1/2 h-1/2 object-cover' src={pro1} alt='project' />
+    return (
+        <div className='w-full h-full bg-stone-200 pt-5'>
+            <h2 className='text-3xl font-bold font-["Playwrite_AR"] text-center mb-5'>My Project Timeline</h2>
+            <div className='flex flex-wrap flex-col md:flex-row p-4'>
+                <div className='w-full h-full md:w-1/2 md:h-1/2 bg-stone-200 p-2'>
+                    <img src={pro1} className='w-full h-full md:w-[80%] md:h-full object-cover' alt=''/>
+                    <h3 className='text-xl text-gray-800 font-sans font-bold'>My Hero Academia Fan Web</h3>
+                    <p className='text-xl font-sans font-medium '>Created with: React and Tailwind CSS</p>
+                </div>
+                <div className='w-full h-full md:w-1/2 md:h-1/2 bg-stone-200 p-2'>
+                    <img src={pro1} className='w-full h-full md:w-[80%] md:h-full object-cover' alt=''/>
+                    <h3 className='text-xl text-gray-800 font-sans font-bold'>Project 1</h3>
+                    <p className='text-xl font-sans font-medium '>Created with: React and Tailwind CSS</p>
+                </div>
+                <div className='w-full h-full md:w-1/2 md:h-1/2 bg-stone-200 p-2'>
+                    <img src={pro1} className='w-full h-full md:w-[80%] md:h-full object-cover' alt=''/>
+                    <h3 className='text-xl text-gray-800 font-sans font-bold'>Project 1</h3>
+                    <p className='text-xl font-sans font-medium '>Created with: React and Tailwind CSS</p>
+                </div>
             </div>
-            {/* <div className='bg-zinc-500 w-1/2 h-1/2'>
-                <img className='w-[80%] h-[80%] object-cover' src={pro1} alt='project' />
-            </div>
-            <div className='bg-zinc-500 w-1/2 h-1/2'>
-                <img className='w-[80%] h-[80%] object-cover' src={pro1} alt='project' />
-            </div>
-            <div className='bg-zinc-500 w-1/2 h-1/2'>
-                <img className='w-[80%] h-[80%] object-cover' src={pro1} alt='project' />
-            </div> */}
         </div>
-    </div>
-  )
-}
+    );
+};
 
-export default Project
+export default Project;
