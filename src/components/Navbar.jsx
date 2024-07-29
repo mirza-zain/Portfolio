@@ -20,7 +20,7 @@ const Navbar = () => {
     return (
         <div className='container-fluid bg-transparent text-gray-950 flex flex-wrap lg:flex-nowrap justify-between pb-2'>
             <div className='flex justify-between items-center w-full md:w-auto'>
-                <a className='navbar-brand w-full' href='/'><h2 className='font-["Playwrite_AR"] font-bold text-2xl text-emerald-600 px-3'>{logo}</h2></a>
+                <a className='navbar-brand w-full' href='/'><h2 className='font-["Playwrite_AR"] font-bold text-lg md:text-2xl text-teal-500 px-3 pt-2'>{logo}</h2></a>
                 <div className='hamburger md:hidden text-2xl' onClick={toggleMobileMenu}>
                     <i className="ri-menu-line"></i>
                 </div>

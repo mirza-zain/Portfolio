@@ -13,7 +13,7 @@ const About = () => {
         deleteSpeed: 60
     })
     return (
-        <div className='w-full h-screen flex flex-col md:flex-row p-4'>
+        <div className='w-full h-full md:h-screen flex flex-col md:flex-row p-4'>
             <div className='w-full md:w-1/2 bg-zinc-200'>
                 <div className='flex p-3'>
                 <div className='bg-yellow-400 w-8 md:w-10 h-8 md:h-10 rounded-full'></div>

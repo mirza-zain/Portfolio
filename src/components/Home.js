@@ -4,6 +4,8 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import blobright from '../animations/blobbottom.json';
 import blobleft from '../animations/blobtop.json';
 import About from './About';
+import Project from './Project';
+import Contact from './Contact';
 
 const Home = () => {
   const [text] = useTypewriter({
@@ -28,6 +30,8 @@ const Home = () => {
         <Lottie animationData={blobleft} className='absolute top-0 left-0 w-1/2 h-1/2' />
       </div>
       <About />
+      <Project />
+      <Contact />
     </>
   );
 }
