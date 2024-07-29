@@ -14,7 +14,7 @@ const Home = () => {
   });
 
   return (
-    <div className="w-full h-screen">
+    <>
       <div className='w-full h-screen bg-zinc-200 relative'>
         <Lottie animationData={blobright} className='absolute bottom-0 right-0 w-1/2 h-1/2' />
         <div className='flex justify-center items-center h-full'>
@@ -28,7 +28,7 @@ const Home = () => {
         <Lottie animationData={blobleft} className='absolute top-0 left-0 w-1/2 h-1/2' />
       </div>
       <About />
-    </div>
+    </>
   );
 }
 

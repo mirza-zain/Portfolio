@@ -29,7 +29,7 @@ const About = () => {
                     Let's build something amazing together!
                 </p>
             </div>
-            <div className='w-full md:w-1/2 flex flex-col bg-emerald-200 h-[80%] md:h-full'>
+            <div className='w-full md:w-1/2 flex flex-col bg-cyan-400 h-[80%] md:h-full'>
                 <Lottie animationData={face} className='w-full h-[60%] md:h-[40%] pt-3 md:pt-2'/>
                 <a href={resume} className='px-8 py-3 font-bold text-lg rounded-md bg-yellow-400 mt-4 text-center' download>Resume</a>
                 <Lottie animationData={arrow} className='w-full h-[25%] -rotate-45 pt-0' />
