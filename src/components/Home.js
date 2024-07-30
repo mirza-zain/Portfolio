@@ -5,6 +5,7 @@ import blobright from '../animations/blobbottom.json';
 import blobleft from '../animations/blobtop.json';
 import About from './About';
 import Project from './Project';
+import Contact from './Contact';
 
 const Home = () => {
   const [text] = useTypewriter({
@@ -30,6 +31,7 @@ const Home = () => {
       </div>
       <About />
       <Project />
+      <Contact />
     </div>
   );
 }
