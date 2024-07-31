@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
+import Thankyou from "./components/Thankyou";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -33,6 +34,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/project" element={<Project />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/thankyou" element={<Thankyou />} />
             </Routes>
             <Footer />
           </Router>
