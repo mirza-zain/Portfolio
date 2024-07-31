@@ -3,6 +3,7 @@ import Lottie from 'lottie-react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import blobright from '../animations/blobbottom.json';
 import blobleft from '../animations/blobtop.json';
+import cat from '../animations/cat.json';
 import About from './About';
 import Project from './Project';
 import Contact from './Contact';
@@ -17,15 +18,16 @@ const Home = () => {
 
   return (
     <div className='overflow-hidden'>
-      <div className='w-full h-screen bg-zinc-200 relative'>
-        <Lottie animationData={blobright} className='absolute bottom-0 right-0 w-1/2 h-1/2' />
+      <div className='w-full h-screen bg-[#90AEAD] relative rounded-md'>
+        <Lottie animationData={blobright} className='absolute bottom-0 right-0 w-1/2 h-1/2 ' />
         <div className='flex justify-center items-center h-full'>
-          <h1 className='absolute top-[35%] text-4xl md:text-6xl font-bold font-["Playwrite_AR"]'>Mirza Zain</h1>
+          <h1 className='absolute text-[#FBE9D0] top-[35%] text-4xl md:text-6xl font-extrabold font-["Playwrite_AR"]'>Mirza Zain</h1>
           <p className='absolute top-1/2 font-semibold text-xl font-["Oswald"]'>
-            I'm a <span>{text}</span>
+            I'm a <span className='text-[#E64833]'>{text}</span>
             <Cursor cursorColor='gray' cursorStyle='|' />
             <span></span>
           </p>
+          <Lottie animationData={cat} className='absolute top-[35%] md:top-[45%] w-1/2 h-1/2' />
         </div> 
         <Lottie animationData={blobleft} className='absolute top-0 left-0 w-1/2 h-1/2' />
       </div>

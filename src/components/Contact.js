@@ -6,14 +6,14 @@ import service from '../animations/service.json';
 const Contact = () => {
   return (
     <div className='w-full h-full md:h-screen flex flex-col md:flex-row p-2'>
-      <div className='w-full md:w-1/2 flex flex-col items-center justify-center' >
-        <h2 className='text-3xl md:text-4xl text-cyan-600 font-bold font-["Playwrite_AR"] mt-4'>Contact Form</h2>
+      <div className='w-full md:w-1/2 flex flex-col items-center justify-center bg-[#FBE9D0] p-5 rounded-md' >
+        <h2 className='text-3xl md:text-4xl text-[#E64833] font-bold font-["Playwrite_AR"] mt-4'>Contact Form</h2>
         <Lottie animationData={connect} className='w-full md:w-[40%] h-[20%]'/>
         <Lottie animationData={service} className='w-full md:w-[60%] h-1/2'/>
       </div>
-      <div className='w-full md:w-1/2 p-6'>
+      <div className='w-full md:w-1/2 p-6 bg-[#90AEAD]'>
       <form className='flex flex-col translate-y-2 md:translate-y-[50%]' action="https://formsubmit.co/mirzazain269@gmail.com" method="POST">
-        <ul className='flex text-4xl gap-4 text-cyan-800'>
+        <ul className='flex text-4xl gap-4 text-[#E64833]'>
           <li className='hover:text-yellow-400 duration-500 ease-in-out'><a href='https://www.instagram.com/mirza_zain43/' target='_blank' rel='noreferrer'><i className="ri-instagram-fill"></i></a></li>
           <li className='hover:text-yellow-400 duration-500 ease-in-out'><a href='https://www.linkedin.com/in/mirza-zain269/' target='_blank' rel='noreferrer'><i className="ri-linkedin-fill"></i></a></li>
           <li className='hover:text-yellow-400 duration-500 ease-in-out'><a href='https://github.com/mirza-zain' target='_blank' rel='noreferrer'><i className="ri-github-fill"></i></a></li>

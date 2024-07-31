@@ -18,9 +18,9 @@ const Navbar = () => {
     });
 
     return (
-        <div className='container-fluid bg-transparent text-gray-950 flex flex-wrap lg:flex-nowrap justify-between pb-2'>
+        <div className='container-fluid bg-transparent text-[#FBE9D0] flex flex-wrap lg:flex-nowrap justify-between pb-2'>
             <div className='flex justify-between items-center w-full md:w-auto'>
-                <a className='navbar-brand w-full' href='/'><h2 className='font-["Playwrite_AR"] font-bold text-lg md:text-2xl text-teal-500 px-3 pt-2'>{logo}</h2></a>
+                <a className='navbar-brand w-full' href='/'><h2 className='font-["Playwrite_AR"] font-bold text-lg md:text-2xl px-3 pt-2 text-[#90AEAD]'>{logo}</h2></a>
                 <div className='hamburger md:hidden text-2xl' onClick={toggleMobileMenu}>
                     <i className="ri-menu-line"></i>
                 </div>
@@ -29,16 +29,16 @@ const Navbar = () => {
             <div id='desktop' className='navbar hidden md:flex flex-nowrap'>
                 <ul className='navbar-nav flex-row gap-5 px-4'>
                     <li className='nav-item'>
-                        <a className='nav-link text-gray-800 text-xl tracking-wider font-medium hover:text-emerald-500 ease-in-out duration-500 font-["Oswald"]' href='/home'>Home</a>
+                        <a className='nav-link text-gray-800 text-xl tracking-wider font-medium hover:text-[#E64833] ease-in-out duration-500 font-["Oswald"]' href='/home'>Home</a>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link text-gray-800 text-xl tracking-wider font-medium hover:text-emerald-500 ease-in-out duration-500 font-["Oswald"]' href='/about'>About Me</a>
+                        <a className='nav-link text-gray-800 text-xl tracking-wider font-medium hover:text-[#E64833] ease-in-out duration-500 font-["Oswald"]' href='/about'>About Me</a>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link text-gray-800 text-xl tracking-wider font-medium hover:text-emerald-500 ease-in-out duration-500 font-["Oswald"]' href='/project'>Projects</a>
+                        <a className='nav-link text-gray-800 text-xl tracking-wider font-medium hover:text-[#E64833] ease-in-out duration-500 font-["Oswald"]' href='/project'>Projects</a>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link text-gray-800 text-xl tracking-wider font-medium hover:text-emerald-500 ease-in-out duration-500 font-["Oswald"]' href='/contact'>Contact Me</a>
+                        <a className='nav-link text-gray-800 text-xl tracking-wider font-medium hover:text-[#E64833] ease-in-out duration-500 font-["Oswald"]' href='/contact'>Contact Me</a>
                     </li>
                 </ul>
             </div>

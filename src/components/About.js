@@ -15,15 +15,15 @@ const About = () => {
     return (
         <div className='overflow-hidden'>
         <div className='w-full h-full md:h-screen flex flex-col md:flex-row p-3'>
-            <div className='w-full md:w-1/2 bg-zinc-200'>
+            <div className='w-full md:w-1/2 bg-[#FBE9D0]'>
                 <div className='flex p-3'>
                 <div className='bg-yellow-400 w-8 md:w-10 h-8 md:h-10 rounded-full'></div>
                 <div className='bg-cyan-400 w-8 md:w-10 h-8 md:h-10 rounded-full'></div>
                 </div>
-                <h2 className='text-4xl p-4 font-["Playwrite_AR"] font-bold'>A{heading}<Cursor /></h2>
-                <p className='text-xl font-light font-sans w-[90%] p-4 text-start md:text-justify'>I'm Mirza Zain, a Full Stack Developer passionate about crafting exceptional web experiences. 
+                <h2 className='text-4xl p-4 font-["Playwrite_AR"] font-bold text-[#E64833]'>A{heading}<Cursor /></h2>
+                <p className='text-xl font-medium font-sans w-[90%] p-4 text-start md:text-justify text-[244855]'>I'm Mirza Zain, a Full Stack Developer passionate about crafting exceptional web experiences. 
                     Currently pursuing a Bachelor's degree in Software Engineering at Sindh Madressatul Islam University, 
-                    <br />I specialize in<span className='font-semibold '> "MERN (MongoDB, Express, React, Node)"</span>. 
+                    <br />I specialize in<span className='font-bold '> "MERN (MongoDB, Express, React, Node)"</span>. 
                     <br />With a keen eye for design and a strong foundation in development, 
                     I'm committed to creating functional and visually appealing websites. 
                     I'm always eager to learn and collaborate on exciting projects.
