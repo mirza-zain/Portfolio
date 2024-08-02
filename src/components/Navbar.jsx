@@ -18,7 +18,7 @@ const Navbar = () => {
     });
 
     return (
-        <div className='container-fluid bg-transparent text-[#FBE9D0] flex flex-wrap lg:flex-nowrap justify-between pb-2'>
+        <div className='container-fluid bg-transparent flex flex-wrap lg:flex-nowrap justify-between pb-2 '>
             <div className='flex justify-between items-center w-full md:w-auto'>
                 <a className='navbar-brand w-full' href='/'><h2 className='font-["Playwrite_AR"] font-bold text-lg md:text-2xl px-3 pt-2 text-[#90AEAD]'>{logo}</h2></a>
                 <div className='hamburger md:hidden text-2xl' onClick={toggleMobileMenu}>
