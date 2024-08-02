@@ -65,7 +65,7 @@ const Home = () => {
       <div className='w-full h-screen bg-[#90AEAD] relative rounded-md'>
         <Lottie animationData={blobright} className='absolute bottom-0 right-0 w-1/2 h-1/2 ' />
         <div className='flex justify-center items-center h-full'>
-          <h1 onMouseEnter={textEnter} nnMouseLeave={textLeave} className='absolute text-[#FBE9D0] top-[35%] text-4xl md:text-6xl font-extrabold font-["Playwrite_AR"]'>Mirza Zain</h1>
+          <h1 onMouseEnter={textEnter} onMouseLeave={textLeave} className='absolute text-[#FBE9D0] top-[35%] text-4xl md:text-6xl font-extrabold font-["Playwrite_AR"]'>Mirza Zain</h1>
           <motion.div className='bg-[#FBE9D0] h-8 w-8 rounded-full fixed top-0 left-0 z-10 pointer-events-none' variants={variants} animate={cursorVariant} />
           <p className='absolute top-1/2 font-semibold text-xl font-["Oswald"]'>
             I'm a <span className='text-[#E64833]'>{text}</span>
