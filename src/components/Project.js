@@ -18,16 +18,16 @@ const Project = () => {
           </div>
         </div>
         <div className='w-full h-full md:w-1/2 p-2 bg-[#90AEAD]'>
-        <a href='https://mirza-zain.github.io/DespicableMe-Frontend-Project/' target='_blank' rel='noreferrer'><img className='w-full hover:opacity-80' src={pro2} alt='project' /></a>
+        <a href='https://freeeresumebuilder.vercel.app/' target='_blank' rel='noreferrer'><img className='w-full hover:opacity-80' src={pro2} alt='project' /></a>
           <div className='w-full h-full p-2'>
-            <h4 className='text-[#E64833] bg-[#FBE9D0] rounded-md w-full md:w-1/2 text-2xl font-semibold'>Minions Web Page</h4>
-            <p className='text-gray-800 text-lg font-sans font-medium'>Created using HTML-5, CSS and JavaScript</p>
+            <h4 className='text-[#E64833] bg-[#FBE9D0] rounded-md w-full md:w-1/2 text-2xl font-semibold'>Resume Builder Web</h4>
+            <p className='text-gray-800 text-lg font-sans font-medium'>Created using HTML-5, CSS and TypeScript</p>
           </div>
         </div>
         <div className='w-full h-full md:w-1/2 p-2 bg-[#90AEAD]'>
-        <a href='https://mirzazain-fibonacci-app.netlify.app/' target='_blank' rel='noreferrer'><img className='w-full hover:opacity-80' src={pro3} alt='project' /></a>
+        <a href='https://onepiecefan.vercel.app/' target='_blank' rel='noreferrer'><img className='w-full hover:opacity-80' src={pro3} alt='project' /></a>
           <div className='w-full h-full p-2'>
-            <h4 className='text-[#E64833] bg-[#FBE9D0] rounded-md w-full md:w-1/2 text-2xl font-semibold'>Fibonacci Web</h4>
+            <h4 className='text-[#E64833] bg-[#FBE9D0] rounded-md w-full md:w-1/2 text-2xl font-semibold'>One Piece Web</h4>
             <p className='text-gray-800 text-lg font-sans font-medium'>Created using HTML-5 and CSS</p>
           </div>
         </div>
