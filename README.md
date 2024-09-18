@@ -49,4 +49,4 @@ Feel free to customize the content, images, and projects to reflect your own inf
 
 ## Contributing
 
-If you'd like to contribute changes back to this main repository, please create a pull request outlining the modifications you've made. Let's make this portfolio even better together!
+If you'd like to contribute changes back to this main repository, please create a pull request outlining the modifications you've made. Let's make this portfolio even better together!!!
