@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: Relance;
+  src: url("./Fonts/Realce.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Designer;
+  src: url("./Fonts/DESIGNER.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: QuickStyler;
+  src: url("./Fonts/Quickstyler.otf");
+  font-weight: 500;
+}
