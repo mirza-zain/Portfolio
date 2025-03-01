@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="w-full h-full flex flex-col m-0 p-0 font-[Relance]">
+        className="w-full h-full flex flex-col m-0 p-0 ">
           <Navbar />
         {children}
       </body>
