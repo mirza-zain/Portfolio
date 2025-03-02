@@ -11,7 +11,7 @@ export default function Home() {
     <main className="w-full h-full flex flex-1 flex-col-reverse md:flex-row justify-center items-center mt-10">
       <div className="w-full md:w-1/2 flex flex-col justify-center items-start m-5 p-5">
       {/* Main Heading */}
-        <h1 className="text-3xl md:text-3xl lg:text-5xl font-[PlaySir] mt-5">Hi all, <span className="text-teal-700">I'm Zain</span> 👋🏻</h1>
+        <h1 className="text-3xl md:text-3xl lg:text-5xl font-[PlaySir] mt-5">Hi all, <span className="text-teal-700">I&apos;m Zain</span> 👋🏻</h1>
       {/* Introduction  */}
         <p className="text-lg lg:text-xl text-justify mt-5">Front-end developer skilled in HTML5, CSS3, JavaScript (ES6+), React.js, and Next.js, pursuing a BS in
         Software Engineering at SMIU. Builds responsive, performant web apps with a focus on accessibility and

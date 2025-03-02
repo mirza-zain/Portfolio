@@ -38,10 +38,10 @@ const Navbar = () => {
             { mobVisible && (
                 <div id="Mobile" className='w-full h-screen flex flex-col justify-center items-center z-50 p-0'>
                     <ul className='h-1/2 flex flex-col justify-around items-center text-2xl p-0'>
-                        <li><Link href={"/about"} className={path === "/" ? 'text-black ease-in-out duration-200 hover:text-teal-500' : 'text-teal-500'}>About Me</Link></li>
-                        <li><Link href={"/skills"} className={path === "/" ? 'text-black ease-in-out duration-200 hover:text-teal-500' : 'text-teal-500'}>Skills</Link></li>
-                        <li><Link href={"/projects"} className={path === "/" ? 'text-black ease-in-out duration-200 hover:text-teal-500' : 'text-teal-500'}>Projects</Link></li>
-                        <li><Link href={"/contact"} className={path === "/" ? 'text-black ease-in-out duration-200 hover:text-teal-500' : 'text-teal-500'}>Contact Me</Link></li>
+                        <li><Link href={"/about"} className={path === "/" ? 'text-black ease-in-out duration-200 hover:text-teal-500' : 'text-teal-500'} onClick={handleClick}>About Me</Link></li>
+                        <li><Link href={"/skills"} className={path === "/" ? 'text-black ease-in-out duration-200 hover:text-teal-500' : 'text-teal-500'} onClick={handleClick}>Skills</Link></li>
+                        <li><Link href={"/projects"} className={path === "/" ? 'text-black ease-in-out duration-200 hover:text-teal-500' : 'text-teal-500'} onClick={handleClick}>Projects</Link></li>
+                        <li><Link href={"/contact"} className={path === "/" ? 'text-black ease-in-out duration-200 hover:text-teal-500' : 'text-teal-500'} onClick={handleClick}>Contact Me</Link></li>
                     </ul>
                 </div> 
             )}
