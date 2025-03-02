@@ -4,19 +4,25 @@
 
 
 @font-face {
-  font-family: Relance;
-  src: url("./Fonts/Realce.otf");
+  font-family: FuturePT;
+  src: url("./Fonts/FuturaCyrillicBook.ttf");
   font-weight: 500;
 }
 
 @font-face {
-  font-family: Designer;
-  src: url("./Fonts/DESIGNER.otf");
+  font-family: PlaySir;
+  src: url("./Fonts/PLAYSIRRegular.otf");
   font-weight: 500;
 }
 
 @font-face {
   font-family: QuickStyler;
   src: url("./Fonts/Quickstyler.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: PlayFair;
+  src: url("./Fonts/PlayfairDisplay-Regular.ttf");
   font-weight: 500;
 }
