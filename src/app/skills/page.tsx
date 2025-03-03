@@ -77,8 +77,8 @@ const SkillsPage = () => {
               skills.map(skill => {
                 return (
                   <div key={skill.id} className='flex flex-col justify-center items-center m-2'>
-                    <i className={"text-2xl hover:text-electric ease-in-out duration-700 cursor-pointer " + `ri-${skill.attribute}-fill`}></i> 
-                    <pre className='text-lg'>{skill.name}</pre>
+                    <i className={"text-xl md:text-2xl hover:text-electric ease-in-out duration-700 cursor-pointer " + `ri-${skill.attribute}-fill`}></i> 
+                    <pre className='text-sm md:text-lg'>{skill.name}</pre>
                   </div>
                 )
               })
