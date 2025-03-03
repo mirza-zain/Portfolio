@@ -9,8 +9,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        electric: "#BF00FF", // Electric purple
+        neon: "#00FFFF", // Neon cyan
+      },
+      boxShadow: {
+        "glow-electric": "0 0 10px #BF00FF, 0 0 20px #BF00FF",
+        "glow-neon": "0 0 10px #00FFFF, 0 0 20px #00FFFF",
       },
     },
   },
