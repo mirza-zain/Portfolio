@@ -70,9 +70,9 @@ const SkillsPage = () => {
           <Lottie animationData={Cat} className="w-full md:w-4/5 place-self-center" />
        </div>
        <div className='w-full md:w-1/2'>
-          <h2 className='font-[PlaySir] font-bold text-3xl underline decoration-electric'>What I do</h2>
-          <p className="text-xl font-[PlayFair] font-bold mt-5 uppercase text-justify">crazy developer who loves exploring tech 😁</p>
-          <div className='flex justify-center md:justify-start items-center flex-wrap gap-5 pt-5'>
+          <h2 className='font-[PlaySir] font-bold text-2xl underline decoration-electric'>What I do</h2>
+          <p className="text-xl font-bold mt-7 uppercase text-justify">crazy developer who loves exploring tech 😁</p>
+          <div className='flex justify-start items-center flex-wrap gap-5 pt-5'>
             {
               skills.map(skill => {
                 return (
