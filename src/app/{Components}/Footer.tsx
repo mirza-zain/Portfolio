@@ -28,7 +28,7 @@ const Footer = () => {
             <div className='w-1/2 flex flex-col justify-start items-center gap-2'>
                 <h3 className="text-xl">Page Links</h3>
                 <div>
-                    <ul className='flex flex-col justify-center items-center gap-5 text-lg'>
+                    <ul className='flex flex-col md:flex-row justify-center items-center gap-5 text-lg flex-wrap'>
                         <li><Link href={"/"} className={path === "/" ? 'text-white underline decoration-electric' : 'text-white ease-in-out duration-200 hover:text-electric'}>Home</Link></li>
                         <li><Link href={"/skills"} className={path === "/skills" ? 'text-white underline decoration-electric' : 'text-white ease-in-out duration-200 hover:text-electric'}>Skills</Link></li>
                         <li><Link href={"/projects"} className={path === "/projects" ? 'text-white underline decoration-electric' : 'text-white ease-in-out duration-200 hover:text-electric'}>Projects</Link></li>

@@ -29,6 +29,7 @@ const Navbar = () => {
                         <ul className='flex justify-around items-center gap-5'>
                             <li><Link href={"/"} className={path === "/" ? 'text-black underline decoration-electric' : 'text-black ease-in-out duration-200 hover:text-electric'}>Home</Link></li>
                             <li><Link href={"/skills"} className={path === "/skills" ? 'text-black underline decoration-electric' : 'text-black ease-in-out duration-200 hover:text-electric'}>Skills</Link></li>
+                            <li><Link href={"/education"} className={path === "/education" ? 'text-black underline decoration-electric' : 'text-black ease-in-out duration-200 hover:text-electric'}>Education</Link></li>
                             <li><Link href={"/projects"} className={path === "/projects" ? 'text-black underline decoration-electric' : 'text-black ease-in-out duration-200 hover:text-electric'}>Projects</Link></li>
                             <li><Link href={"/contact"} className={path === "/contact" ? 'text-black underline decoration-electric' : 'text-black ease-in-out duration-200 hover:text-electric'}>Contact Me</Link></li>
                         </ul>
@@ -38,8 +39,9 @@ const Navbar = () => {
             { mobVisible && (
                 <div id="Mobile" className='w-full h-screen flex flex-col justify-center items-center bg-white top-0 left-0 p-0 z-40'>
                     <ul className='h-1/2 flex flex-col justify-around items-center text-2xl p-0'>
-                        <li><Link href={"/"} className={path === "/" ? 'text-black underline decoration-electric' : 'text-black ease-in-out duration-200 hover:text-electric'}>Home</Link></li>
+                        <li><Link href={"/"} className={path === "/" ? 'text-black underline decoration-electric' : 'text-black ease-in-out duration-200 hover:text-electric'} onClick={handleClick}>Home</Link></li>
                         <li><Link href={"/skills"} className={path === "/skills" ? 'text-black underline decoration-electric' : 'text-black ease-in-out duration-200 hover:text-electric'} onClick={handleClick}>Skills</Link></li>
+                        <li><Link href={"/education"} className={path === "/education" ? 'text-black underline decoration-electric' : 'text-black ease-in-out duration-200 hover:text-electric'} onClick={handleClick}>Education</Link></li>
                         <li><Link href={"/projects"} className={path === "/projects" ? 'text-black underline decoration-electric' : 'text-black ease-in-out duration-200 hover:text-electric'} onClick={handleClick}>Projects</Link></li>
                         <li><Link href={"/contact"} className={path === "/contact" ? 'text-black underline decoration-electric' : 'text-black ease-in-out duration-200 hover:text-electric'} onClick={handleClick}>Contact Me</Link></li>
                     </ul>
