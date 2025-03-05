@@ -15,7 +15,7 @@ const Navbar = () => {
         <>
             <header className='w-full h-1/6 flex-1 p-5'>
                 <div id='Desktop' className='flex justify-between items-center m-2 p-2'>
-                    <div>
+                    <div className="z-50">
                         <span className='text-3xl'>&lt;/</span>
                         <span className='font-[QuickStyler] text-4xl text-electric'><Link href={"/"}>Mirza Zain</Link></span>
                         <span className='text-3xl'>&gt;</span>
@@ -37,7 +37,7 @@ const Navbar = () => {
                 </div>
             </header>
             { mobVisible && (
-                <div id="Mobile" className='w-full h-screen flex flex-col justify-center items-center bg-white top-0 left-0 p-0 z-40'>
+                <div id="Mobile" className='w-full h-screen flex flex-col justify-center items-center bg-white fixed z-40'>
                     <ul className='h-1/2 flex flex-col justify-around items-center text-2xl p-0'>
                         <li><Link href={"/"} className={path === "/" ? 'text-black underline decoration-electric' : 'text-black ease-in-out duration-200 hover:text-electric'} onClick={handleClick}>Home</Link></li>
                         <li><Link href={"/skills"} className={path === "/skills" ? 'text-black underline decoration-electric' : 'text-black ease-in-out duration-200 hover:text-electric'} onClick={handleClick}>Skills</Link></li>

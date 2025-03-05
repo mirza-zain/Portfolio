@@ -4,13 +4,14 @@ import Face from "./animations/facee.json"
 import dynamic from "next/dynamic";
 import { Instagram, Linkedin, Github } from "lucide-react"
 import SkillsPage from "./skills/page";
+import EducationPage from "./education/page";
 
 export default function Home() {
   const Lottie = dynamic(() => import('lottie-react'), {ssr: false})
 
   return (
     <>
-      <div className="w-full h-full flex flex-1 flex-col-reverse md:flex-row justify-center items-center mt-10 mb-10">
+      <div className="w-full h-full flex-1 flex flex-col-reverse md:flex-row justify-center items-center mt-10 mb-10">
         <div className="w-full md:w-1/2 flex flex-col justify-center items-start m-5 p-5">
         {/* Main Heading */}
           <h1 className="text-3xl md:text-3xl lg:text-5xl font-[PlaySir] mt-5">Hi all, <span className="text-electric">I&apos;m Zain</span> 👋🏻</h1>
@@ -34,6 +35,7 @@ export default function Home() {
         </div>
       </div>
       <SkillsPage />
+      <EducationPage />
     </>
   );
 }
