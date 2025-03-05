@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className='w-full h-1/4 bg-black text-white mt-5'>
         <div className="flex flex-1 justify-between items-center">
-            <div className='w-1/2 flex flex-col justify-between items-center'>
+            <div className='w-1/2 flex flex-col justify-between items-center mt-4'>
                 <div>    
                     <span className='text-2xl'>&lt;/</span>
                     <span className='font-[QuickStyler] text-3xl text-electric'><Link href={"/"}>Mirza Zain</Link></span>
