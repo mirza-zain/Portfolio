@@ -10,11 +10,30 @@ module.exports = {
         electric: "#BF00FF", // Electric purple
       },
       boxShadow: {
-        "glow-neon": "0 0 8px #00FFFF",
-        "glow-electric": "0 0 8px #BF00FF",
+        "glow-electric": "0 0 10px #BF00FF, 0 0 20px #BF00FF",
+        'bottom-dark': '5px 8px 2px 1px #BF00FF',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.stroke-1': {
+          '-webkit-text-stroke-width': '2px',
+        },
+        '.stroke-2': {
+          '-webkit-text-stroke-width': '4px',
+        },
+        '.stroke-black': {
+          '-webkit-text-stroke-color': '#000',
+        },
+        '.stroke-electric': {
+          '-webkit-text-stroke-color': '#BF00FF',
+        },
+      };
+
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+  ],
 }
 

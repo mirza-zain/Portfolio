@@ -14,9 +14,28 @@ export default {
       },
       boxShadow: {
         "glow-electric": "0 0 10px #BF00FF, 0 0 20px #BF00FF",
-        "glow-neon": "0 0 10px #00FFFF, 0 0 20px #00FFFF",
+        'bottom-dark': '4px 7px 2px -1px #BF00FF',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }: any) {
+      const newUtilities = {
+        '.stroke-1': {
+          '-webkit-text-stroke-width': '2px',
+        },
+        '.stroke-2': {
+          '-webkit-text-stroke-width': '4px',
+        },
+        '.stroke-black': {
+          '-webkit-text-stroke-color': '#000',
+        },
+        '.stroke-white': {
+          '-webkit-text-stroke-color': '#fff',
+        },
+      };
+
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+  ],
 } satisfies Config;

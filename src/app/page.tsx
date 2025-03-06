@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import { Instagram, Linkedin, Github } from "lucide-react"
 import SkillsPage from "./skills/page";
 import EducationPage from "./education/page";
+import ProjectPage from "./projects/page";
 
 export default function Home() {
   const Lottie = dynamic(() => import('lottie-react'), {ssr: false})
@@ -36,6 +37,7 @@ export default function Home() {
       </div>
       <SkillsPage />
       <EducationPage />
+      <ProjectPage />
     </>
   );
 }
