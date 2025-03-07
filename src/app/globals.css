@@ -26,6 +26,17 @@
   src: url("./Fonts/PlayfairDisplay-Regular.ttf");
   font-weight: 500;
 }
+/* globals.css */
+
+/* Light mode styles */
+body {
+  @apply bg-white text-black;
+}
+
+/* Dark mode styles */
+.dark body {
+  @apply bg-black text-white;
+}
 
 /* Custom scrollbar styles */
 ::-webkit-scrollbar {

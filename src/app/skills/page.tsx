@@ -65,7 +65,7 @@ const SkillsPage = () => {
   ]
 
   return (
-    <div className="w-full h-full flex-1 flex flex-col md:flex-row justify-center items-center p-5">
+    <div id='skills' className="w-full h-full flex-1 flex flex-col md:flex-row justify-center items-center p-5">
        <div className='w-full md:w-1/2'>
           <Lottie animationData={Cat} className="w-full md:w-4/5 place-self-center" />
        </div>

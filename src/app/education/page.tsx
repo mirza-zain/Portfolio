@@ -1,8 +1,9 @@
 import React from 'react'
 
+
 const EducationPage = () => {
   return (
-    <div className="w-full h-full flex-1 mt-5 p-5 mb-5">
+    <div id='education' className="w-full h-full flex-1 mt-5 p-5 mb-5">
         <div>
             <h2 className="font-[PlaySir] text-3xl underline decoration-electric ">Education</h2>
             <h3 className="text-xl mt-5 font-bold">Sindh MadressaTul Islam University</h3>
