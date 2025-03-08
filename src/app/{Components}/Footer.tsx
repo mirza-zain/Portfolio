@@ -9,7 +9,7 @@ const Footer = () => {
     const path = usePathname()
 
   return (
-    <footer className='w-full h-1/4 bg-black text-white mt-5'>
+    <footer className='w-full h-1/4 bg-black text-white mt-5 border-double border-electric border-b-0 border-t-2 border-l-0 border-r-0'>
         <div className="flex flex-1 justify-between items-center">
             <div className='w-1/2 md:w-1/4 flex flex-col justify-center items-center md:justify-start md:items-start m-2 md:m-8'>
                 <div>    

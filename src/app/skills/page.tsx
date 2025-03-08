@@ -28,11 +28,6 @@ const SkillsPage = () => {
       'attribute': 'javascript'
     },
     {
-      id: 5,
-      'name': 'TypeScript',
-      'attribute': 'javascript'
-    },
-    {
       id: 6,
       'name': 'React JS',
       'attribute': 'reactjs'

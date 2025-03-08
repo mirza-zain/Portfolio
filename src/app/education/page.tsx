@@ -12,7 +12,7 @@ const EducationPage = () => {
                 <span className='text-xl'>Bachelors of Software Engineering</span>
               </div>
               <div>
-                <span className='text-lg'>Sep 2022 - July 2026</span>
+                <span className='text-sm md:text-lg'>Sep 2022 - July 2026</span>
               </div>
             </div>
             <p className="text-lg text-right">CGPA: 3.5</p>
