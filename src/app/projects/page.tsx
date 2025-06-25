@@ -9,7 +9,7 @@ const ProjectPage = () => {
       'title': 'Random Fashion E-Commerce Website',
       'description': 'Developed a responsive fashion e-commerce website with modern UI/UX. Implemented complete frontend in Next.js and Tailwind CSS. Integrated backend using PHP with MySQL...',
       'skills': 'Next.js, Tailwind CSS, PHP, MySQL',
-      'liveLink': 'https://randomfashion.netlify.app/',
+      'liveLink': 'https://randomfashion.vercel.app/',
       'gitLink': 'https://github.com/mirza-zain/Shoes-E-Commerce-Web',
     },
     {
