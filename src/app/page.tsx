@@ -18,10 +18,11 @@ export default function Home() {
         {/* Main Heading */}
           <h1 className="text-3xl md:text-3xl lg:text-5xl font-[PlaySir] mt-5">Hi all, <span className="text-electric">I&apos;m Zain</span> 👋🏻</h1>
         {/* Introduction  */}
-          <p className="text-lg lg:text-xl text-justify mt-5">Front-end developer skilled in HTML5, CSS3, JavaScript (ES6+), React.js, and Next.js, pursuing a BS in
-          Software Engineering at SMIU. Builds responsive, performant web apps with a focus on accessibility and
-          modern design. Expanding expertise in Next.js (SSR/SSG) and backend fundamentals (Node.js, MongoDB).
-          Collaborative problem-solver passionate about creating intuitive user experiences.
+          <p className="text-lg lg:text-xl text-justify mt-5">Front-end developer with strong foundational skills in HTML5, CSS3, JavaScript (ES6+), and React.js. 
+            Currently pursuing a BSc in Software Engineering at Sindh Madressatul Islam University. 
+            Skilled in building responsive, accessible, and user-centric web applications. 
+            Gaining hands-on experience with full-stack development using Next.js, Node.js, PHP, SQL and MongoDB. 
+            Passionate about intuitive design and solving real-world problems through clean, scalable code
           </p>
         {/* Social Media Links */}
           <ul className="flex justify-center items-center gap-10 text-2xl mt-6">
