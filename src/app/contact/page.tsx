@@ -21,7 +21,7 @@ const ContactPage = () => {
             </ul>
         </div>
         <div className='w-full md:w-1/4'>
-          <Image src={'/profileImage.png'} className='rounded-full object-cover place-self-center border-2 border-electric shadow-glow-electric mt-2 mb-2' width={250} height={250} alt='profile image' />
+          <Image src={'/profileImage.jpg'} className='rounded-full object-cover place-self-center border-2 border-electric shadow-glow-electric mt-2 mb-2' width={250} height={250} alt='profile image' />
         </div>
       </div>
     </div>
