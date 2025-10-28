@@ -6,19 +6,19 @@ const ProjectPage = () => {
   const Project = [
     {
       'id': 1,
+      'title': 'AI-Based Journal App',
+      'description': 'Developed a full-stack journal application where users can write entries. The app utilizes AI/ML APIs to analyze the text content, determine the user\'s mood, and provide insightful feedback...',
+      'skills': 'Next.js, Tailwind CSS, AI/ML APIs, Prisma, NeonDB, Clerk Auth',
+      'liveLink': 'https://moodbetav2.vercel.app/',
+      'gitLink': 'https://github.com/mirza-zain/AI-Based-Mood-Tracking',
+    },
+    {
+      'id': 2,
       'title': 'Random Fashion E-Commerce Website',
       'description': 'Developed a responsive fashion e-commerce website with modern UI/UX. Implemented complete frontend in Next.js and Tailwind CSS. Integrated backend using PHP with MySQL...',
       'skills': 'Next.js, Tailwind CSS, PHP, MySQL',
       'liveLink': 'https://randomfashion.vercel.app/',
       'gitLink': 'https://github.com/mirza-zain/Shoes-E-Commerce-Web',
-    },
-    {
-      'id': 2,
-      'title': 'Resume Builder',
-      'description': 'Create a free, user-friendly resume builder application using TypeScript to help users generate professional resumes effortlessly...',
-      'skills': 'HTML5, CSS3 & TypeScript',
-      'liveLink': 'https://freeeresumebuilder.vercel.app/',
-      'gitLink': 'https://github.com/mirza-zain/Dynamic-Resume-Builder',
     },
     {
       "id": 3,
