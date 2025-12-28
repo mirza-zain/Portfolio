@@ -33,7 +33,7 @@ const ProjectPage = () => {
       'title': 'My Hero Academia Fan Page',
       'description': 'Built responsive fan page frontend using React Js for fast loads and Tailwind CSS for styling the web with modern styles, mobile friendly...',
       'skills': 'React, Typescript & Tailwind CSS',
-      'liveLink': 'https://myheroacademiaa.vercel.app/',
+      'liveLink': 'https://bnha.vercel.app/',
       'gitLink': 'https://github.com/mirza-zain/bnha-anime-web',
     },
   ]
