@@ -33,8 +33,8 @@ export default function Home() {
           {/* Download Resume Button */}
             <Link className="px-4 py-2 bg-electric rounded-md mt-5 text-xl text-white" href={"/MirzaZain.pdf"} download>Download My Resume</Link>
         </div>
-        <div className="w-full md:w-1/2">
-          <Lottie animationData={Face} className="w-3/4 lg:w-3/5 place-self-center rounded-full border-2 border-electric shadow-glow-electric" />
+        <div className="w-full md:w-1/2 flex justify-center items-center">
+          <Lottie animationData={Face} className="w-3/4 lg:w-3/5 rounded-full border-2 border-electric shadow-glow-electric" />
         </div>
       </div>
       <SkillsPage />

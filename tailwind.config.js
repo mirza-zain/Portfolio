@@ -8,11 +8,11 @@ module.exports = {
     extend: {
       colors: {
         neon: "#00FFFF", // Neon cyan
-        electric: "#BF00FF", // Electric purple
+        electric: "#06B6D4", // Cyan accent
       },
       boxShadow: {
-        "glow-electric": "0 0 10px #BF00FF, 0 0 20px #BF00FF",
-        'bottom-dark': '5px 8px 2px 1px #BF00FF',
+        "glow-electric": "0 0 10px #06B6D4, 0 0 20px #2563EB",
+        'bottom-dark': '5px 8px 2px 1px #0EA5E9',
       },
     },
   },
@@ -29,7 +29,7 @@ module.exports = {
           '-webkit-text-stroke-color': '#000',
         },
         '.stroke-electric': {
-          '-webkit-text-stroke-color': '#BF00FF',
+          '-webkit-text-stroke-color': '#06B6D4',
         },
       };
 

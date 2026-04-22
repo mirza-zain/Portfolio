@@ -14,11 +14,11 @@ const ProjectPage = () => {
     },
     {
       'id': 2,
-      'title': 'Random Fashion E-Commerce Website',
-      'description': 'Developed a responsive fashion e-commerce website with modern UI/UX. Implemented complete frontend in Next.js and Tailwind CSS. Integrated backend using PHP with MySQL...',
-      'skills': 'Next.js, Tailwind CSS, PHP, MySQL',
-      'liveLink': 'https://randomfashion.vercel.app/',
-      'gitLink': 'https://github.com/mirza-zain/Shoes-E-Commerce-Web',
+      'title': 'Zentrix Marketing Website',
+      'description': 'Zentrixa Marketing delivers Wikipedia writing, fan art, comic books, animation, and creative branding services to help businesses grow globally...',
+      'skills': 'Next.js & Tailwind CSS',
+      'liveLink': 'https://zentrixamarketing.vercel.app/',
+      'gitLink': 'https://github.com/mirza-zain/zentrixamarketing-website/',
     },
     {
       "id": 3,

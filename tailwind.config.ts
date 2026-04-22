@@ -10,12 +10,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        electric: "#BF00FF", // Electric purple
+        electric: "#06B6D4", // Cyan accent
         neon: "#00FFFF", // Neon cyan
       },
       boxShadow: {
-        "glow-electric": "0 0 10px #BF00FF, 0 0 20px #BF00FF",
-        'bottom-dark': '4px 7px 2px -1px #BF00FF',
+        "glow-electric": "0 0 10px #06B6D4, 0 0 20px #2563EB",
+        'bottom-dark': '4px 7px 2px -1px #0EA5E9',
       },
     },
   },
