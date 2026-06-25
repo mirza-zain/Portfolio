@@ -26,35 +26,70 @@
   src: url("./Fonts/PlayfairDisplay-Regular.ttf");
   font-weight: 500;
 }
-/* globals.css */
+html {
+  scroll-behavior: smooth;
+}
 
 /* Light mode styles */
 body {
-  @apply bg-white text-black;
+  @apply bg-slate-50 text-slate-900 transition-colors duration-300;
 }
 
 /* Dark mode styles */
 .dark body {
-  @apply bg-black text-white;
+  @apply bg-zinc-950 text-slate-100 transition-colors duration-300;
 }
 
 /* Custom scrollbar styles */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #06B6D4; /* Cyan accent */
-  border-radius: 10px;
-  border: 3px solid #f1f1f1;
+  background: #06B6D4;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0891B2;
 }
 
 /* For Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #06B6D4 #f1f1f1;
+  scrollbar-color: #06B6D4 transparent;
+}
+
+/* Glassmorphism Panel styles */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.dark .glass-panel {
+  background: rgba(15, 23, 42, 0.3);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Float Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
 }

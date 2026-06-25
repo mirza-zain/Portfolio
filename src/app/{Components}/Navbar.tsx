@@ -1,13 +1,11 @@
 'use client'
 
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 import React, { useState } from 'react'
 import ThemeSwitch from './ThemeSwitch'
 
 const Navbar = () => {
-    const path = usePathname()
     const [mobVisible, setMobVisible] = useState(false)
 
     const toggleButton = () => { setMobVisible(!mobVisible) }
@@ -15,41 +13,48 @@ const Navbar = () => {
 
     return (
         <>
-            <header className='w-full h-1/6 flex-1 p-5 sticky top-0 bg-white dark:bg-black border-double border-electric border-b-2 border-t-0 border-l-0 border-r-0 z-50'>
-                <div id='Desktop' className='flex justify-between items-center m-2 p-2'>
-                    <div className="z-50">
-                        <span className='text-3xl'>&lt;/</span>
-                        <span className='font-[QuickStyler] text-4xl text-electric'><Link href={"/"}>Mirza Zain</Link></span>
-                        <span className='text-3xl'>&gt;</span>
+            <header className='w-full sticky top-0 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md border-b border-slate-200/55 dark:border-zinc-800/55 transition-colors duration-300 z-50 py-3 px-4 md:px-8'>
+                <div id='Desktop' className='max-w-6xl mx-auto flex justify-between items-center'>
+                    <div className="z-50 flex items-center gap-1">
+                        <span className='text-xl md:text-2xl font-mono text-slate-400 dark:text-zinc-600'>&lt;</span>
+                        <span className='font-[QuickStyler] text-2xl md:text-3xl font-bold tracking-tight text-cyan-500 dark:text-cyan-400 hover:opacity-90 transition-opacity duration-300'>
+                            <Link href="/">Mirza Zain</Link>
+                        </span>
+                        <span className='text-xl md:text-2xl font-mono text-slate-400 dark:text-zinc-600'>/&gt;</span>
                     </div>
-                    <ThemeSwitch className="block md:hidden" />
-                    {mobVisible ?
-                        (<X className='md:hidden z-50' size={25} onClick={toggleButton} />)
-                        :
-                        (<Menu className='md:hidden' size={25} onClick={toggleButton} />)
-                    }
-                    <div className='text-2xl hidden md:block'>
-                        <ul className='flex justify-around items-center gap-5'>
-                            <li><Link href={"/"} className={path === "/" ? 'text-black dark:text-white underline decoration-electric' : 'text-black dark:text-white ease-in-out duration-200 hover:text-electric'}>Home</Link></li>
-                            <li><Link href={"#skills"} className={path === "/#skills" ? 'text-black dark:text-white underline decoration-electric' : 'text-black dark:text-white ease-in-out duration-200 hover:text-electric'}>Skills</Link></li>
-                            <li><Link href={"#education"} className={path === "/#education" ? 'text-black dark:text-white underline decoration-electric' : 'text-black dark:text-white ease-in-out duration-200 hover:text-electric'}>Education</Link></li>
-                            <li><Link href={"#projects"} className={path === "/#projects" ? 'text-black dark:text-white underline decoration-electric' : 'text-black dark:text-white ease-in-out duration-200 hover:text-electric'}>Projects</Link></li>
-                            <li><Link href={"#contact"} className={path === "/#contact" ? 'text-black dark:text-white underline decoration-electric' : 'text-black dark:text-white ease-in-out duration-200 hover:text-electric'}>Contact Me</Link></li>
-                        </ul>
+                    
+                    <div className="flex items-center gap-4">
+                        <div className='hidden md:block'>
+                            <ul className='flex items-center gap-6 text-base font-medium'>
+                                <li><Link href="/" className='text-slate-700 dark:text-slate-200 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors duration-200'>Home</Link></li>
+                                <li><Link href="#skills" className='text-slate-700 dark:text-slate-200 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors duration-200'>Skills</Link></li>
+                                <li><Link href="#education" className='text-slate-700 dark:text-slate-200 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors duration-200'>Education</Link></li>
+                                <li><Link href="#projects" className='text-slate-700 dark:text-slate-200 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors duration-200'>Projects</Link></li>
+                                <li><Link href="#contact" className='text-slate-700 dark:text-slate-200 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors duration-200'>Contact Me</Link></li>
+                            </ul>
+                        </div>
+                        
+                        <ThemeSwitch className="hidden md:block cursor-pointer hover:scale-110 duration-200" />
+                        
+                        <div className="flex items-center gap-3 md:hidden z-50">
+                            <ThemeSwitch className="cursor-pointer hover:scale-110 duration-200" />
+                            {mobVisible ?
+                                (<X className='cursor-pointer text-slate-800 dark:text-slate-200' size={24} onClick={toggleButton} />)
+                                :
+                                (<Menu className='cursor-pointer text-slate-800 dark:text-slate-200' size={24} onClick={toggleButton} />)
+                            }
+                        </div>
                     </div>
-                    <ThemeSwitch className="md:block hidden" />
                 </div>
             </header>
             {mobVisible && (
-                <div id="Mobile" className='w-full h-screen flex flex-col justify-center items-center bg-white dark:bg-black fixed z-40'>
-                    <div>
-                    </div>
-                    <ul className='h-1/2 flex flex-col justify-around items-center text-2xl p-0'>
-                        <li><Link href={"/"} className={path === "/" ? 'text-black dark:text-white underline decoration-electric' : 'text-black dark:text-white ease-in-out duration-200 hover:text-electric'} onClick={handleClick}>Home</Link></li>
-                        <li><Link href={"#skills"} className={path === "/#skills" ? 'text-black dark:text-white underline decoration-electric' : 'text-black dark:text-white ease-in-out duration-200 hover:text-electric'} onClick={handleClick}>Skills</Link></li>
-                        <li><Link href={"#education"} className={path === "/#education" ? 'text-black dark:text-white underline decoration-electric' : 'text-black dark:text-white ease-in-out duration-200 hover:text-electric'} onClick={handleClick}>Education</Link></li>
-                        <li><Link href={"#projects"} className={path === "/#projects" ? 'text-black dark:text-white underline decoration-electric' : 'text-black dark:text-white ease-in-out duration-200 hover:text-electric'} onClick={handleClick}>Projects</Link></li>
-                        <li><Link href={"#contact"} className={path === "/#contact" ? 'text-black dark:text-white underline decoration-electric' : 'text-black dark:text-white ease-in-out duration-200 hover:text-electric'} onClick={handleClick}>Contact Me</Link></li>
+                <div id="Mobile" className='w-full h-screen fixed inset-0 flex flex-col justify-center items-center bg-white/95 dark:bg-zinc-950/95 backdrop-blur-lg z-40 transition-all duration-300'>
+                    <ul className='flex flex-col gap-8 items-center text-xl font-semibold'>
+                        <li><Link href="/" className='text-slate-800 dark:text-slate-200 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors duration-200' onClick={handleClick}>Home</Link></li>
+                        <li><Link href="#skills" className='text-slate-800 dark:text-slate-200 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors duration-200' onClick={handleClick}>Skills</Link></li>
+                        <li><Link href="#education" className='text-slate-800 dark:text-slate-200 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors duration-200' onClick={handleClick}>Education</Link></li>
+                        <li><Link href="#projects" className='text-slate-800 dark:text-slate-200 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors duration-200' onClick={handleClick}>Projects</Link></li>
+                        <li><Link href="#contact" className='text-slate-800 dark:text-slate-200 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors duration-200' onClick={handleClick}>Contact Me</Link></li>
                     </ul>
                 </div>
             )}

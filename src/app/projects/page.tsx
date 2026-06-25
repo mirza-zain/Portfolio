@@ -1,60 +1,100 @@
 import Link from 'next/link'
 import React from 'react'
-
+import { ExternalLink, Github } from 'lucide-react'
 
 const ProjectPage = () => {
   const Project = [
     {
       'id': 1,
+      'title': 'Asaan Taqreeb (Event App)',
+      'description': 'A comprehensive cross-platform mobile application designed to help users browse and filter local event vendors in Karachi. Spearheaded the frontend mobile architecture, and engineered a scalable backend.',
+      'skills': 'React Native, Expo, Node.js, MongoDB, Oracle Database',
+      'liveLink': 'https://asaantaqreeb.vercel.app/',
+      'gitLink': 'https://github.com/Asaan-Taqreeb/Asaan-Taqreeb-App',
+    },
+    {
+      'id': 2,
+      'title': 'Missing Link (AI Resume Analyzer)',
+      'description': 'An AI-powered tool that evaluates a user\'s resume against a specific job description to provide an ATS compatibility score and identify missing keywords using Groq and Gemini APIs.',
+      'skills': 'Next.js, Groq API, Gemini API, AI/ML APIs, Tailwind CSS',
+      'liveLink': 'https://missinlink.vercel.app/',
+      'gitLink': 'https://github.com/mirza-zain',
+    },
+    {
+      'id': 3,
       'title': 'AI-Based Journal App',
-      'description': 'Developed a full-stack journal application where users can write entries. The app utilizes AI/ML APIs to analyze the text content, determine the user\'s mood, and provide insightful feedback...',
+      'description': 'Developed a full-stack journal application where users can write entries. The app utilizes AI/ML APIs to analyze the text content, determine the user\'s mood, and provide insightful feedback.',
       'skills': 'Next.js, Tailwind CSS, AI/ML APIs, Prisma, NeonDB, Clerk Auth',
       'liveLink': 'https://moodbetav2.vercel.app/',
       'gitLink': 'https://github.com/mirza-zain/AI-Based-Mood-Tracking',
     },
     {
-      'id': 2,
-      'title': 'Zentrix Marketing Website',
-      'description': 'Zentrixa Marketing delivers Wikipedia writing, fan art, comic books, animation, and creative branding services to help businesses grow globally...',
-      'skills': 'Next.js & Tailwind CSS',
+      'id': 4,
+      'title': 'Zentrixa Marketing Website',
+      'description': 'Zentrixa Marketing delivers Wikipedia writing, fan art, comic books, animation, and creative branding services to help businesses grow globally.',
+      'skills': 'React, Tailwind CSS',
       'liveLink': 'https://zentrixamarketing.vercel.app/',
       'gitLink': 'https://github.com/mirza-zain/zentrixamarketing-website/',
-    },
-    {
-      "id": 3,
-      'title': 'GearUpRental Car Service',
-      'description': 'Built a responsive car rental frontend using Next.js for fast page loads and Tailwind CSS for modern, mobile-first design...',
-      'skills': 'Next.js & Tailwind CSS',
-      'liveLink': 'https://gearuprental.vercel.app/',
-      'gitLink': 'https://github.com/mirza-zain/Car-Rental-Web',
-    },
-    {
-      'id': 4,
-      'title': 'My Hero Academia Fan Page',
-      'description': 'Built responsive fan page frontend using React Js for fast loads and Tailwind CSS for styling the web with modern styles, mobile friendly...',
-      'skills': 'React, Typescript & Tailwind CSS',
-      'liveLink': 'https://bnha.vercel.app/',
-      'gitLink': 'https://github.com/mirza-zain/bnha-anime-web',
     },
   ]
 
   return (
-    <div id='projects' className='w-full h-full flex-1 p-5'>
-      <h2 className="text-3xl font-[PlaySir] mb-6 underline decoration-electric">Projects</h2>
-      <div className="w-full flex flex-col md:flex-row justify-center items-center flex-wrap gap-5 mt-5">
+    <div id='projects' className='max-w-6xl mx-auto px-4 md:px-8 py-16'>
+      <h2 className="text-3xl md:text-4xl font-[PlaySir] font-extrabold tracking-tight text-slate-900 dark:text-white flex items-center gap-3 mb-10">
+        <span className="w-1.5 h-8 bg-cyan-500 rounded-full"></span>
+        Projects
+      </h2>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         {
-          Project.map(projects => {
+          Project.map(proj => {
+            const skillList = proj.skills.split(',').map(s => s.trim())
             return (
-              <div key={projects.id} className="w-full md:w-[48%] flex flex-col justify-start items-start border-2 border-electric shadow-bottom-dark hover:shadow-glow-electric ease-in-out duration-300 p-4">
-                <h3 className='text-xl font-extrabold uppercase tracking-wider mb-2 underline decoration-electric'>{projects.title}</h3>
-                <p className='text-lg text-justify mb-2'>{projects.description}</p>
-                <div className='inline-flex gap-4'>
-                  <h3 className='text-lg font-extrabold'>Skills Used: </h3>
-                  <p className="text-lg gap-4">{projects.skills}</p>
+              <div 
+                key={proj.id} 
+                className="flex flex-col justify-between h-full bg-white dark:bg-zinc-900 border border-slate-200/80 dark:border-zinc-800/80 rounded-2xl hover:border-cyan-500/50 dark:hover:border-cyan-400/50 hover:shadow-md hover:scale-[1.01] duration-300 transition-all p-6 md:p-8 group"
+              >
+                <div>
+                  <h3 className='text-xl md:text-2xl font-bold tracking-tight text-slate-900 dark:text-white group-hover:text-cyan-500 dark:group-hover:text-cyan-400 transition-colors duration-200'>
+                    {proj.title}
+                  </h3>
+                  <p className='text-sm md:text-base text-slate-600 dark:text-slate-300 leading-relaxed mt-3 mb-6 text-left'>
+                    {proj.description}
+                  </p>
                 </div>
-                <div className='flex gap-3 mt-5'>
-                  <Link href={projects.liveLink} className='px-6 py-2 bg-electric hover:bg-white text-white hover:text-black border-2 border-electric rounded-md hover:font-bold text-lg' target='_blank'>Live Link</Link>
-                  <Link href={projects.gitLink} className='px-6 py-2 bg-transparent hover:bg-electric text-electric hover:text-white border-2 border-electric rounded-md hover:font-bold text-lg' target='_blank'>GitHub</Link>
+                
+                <div className="mt-auto">
+                  <div className='flex flex-wrap gap-2 mb-6'>
+                    {skillList.map((skill, sIdx) => (
+                      <span 
+                        key={sIdx} 
+                        className="px-2.5 py-1 bg-slate-100 dark:bg-zinc-800/80 border border-slate-200/60 dark:border-zinc-700/60 text-slate-600 dark:text-slate-300 text-xs font-semibold rounded-lg"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                  
+                  <div className='flex items-center gap-3 border-t border-slate-100 dark:border-zinc-800/80 pt-5 w-full'>
+                    {proj.liveLink && (
+                      <Link 
+                        href={proj.liveLink} 
+                        className='flex-1 inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-cyan-500 hover:bg-cyan-600 dark:bg-cyan-400 dark:hover:bg-cyan-500 text-white dark:text-zinc-950 font-bold rounded-xl text-sm shadow-sm transition-all duration-200 active:scale-95' 
+                        target='_blank'
+                      >
+                        <span>Live Link</span>
+                        <ExternalLink size={14} />
+                      </Link>
+                    )}
+                    <Link 
+                      href={proj.gitLink} 
+                      className={`inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-transparent hover:bg-slate-100 dark:hover:bg-zinc-800/50 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white border border-slate-200 dark:border-zinc-800 font-bold rounded-xl text-sm transition-all duration-200 active:scale-95 ${proj.liveLink ? '' : 'flex-1'}`} 
+                      target='_blank'
+                    >
+                      <Github size={14} />
+                      <span>Code</span>
+                    </Link>
+                  </div>
                 </div>
               </div>
             )
