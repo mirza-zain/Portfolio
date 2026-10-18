@@ -5,8 +5,9 @@ import Footer from "./{Components}/Footer";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
-  title: "Mirza Zain | Home Page",
-  description: "",
+  title: "Mirza Zain | Full Stack Software Engineer & Web Developer",
+  description: "Portfolio of Mirza Zain — Full Stack Software Engineer specializing in MERN, Next.js, TypeScript, React Native, and AI integrations. Discover client work, case studies, and featured projects.",
+  keywords: ["Mirza Zain", "Software Engineer", "Full Stack Developer", "Next.js", "React", "TypeScript", "Node.js", "React Native", "Web Developer Karachi", "Portfolio"],
 };
 
 export default function RootLayout({
