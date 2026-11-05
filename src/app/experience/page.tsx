@@ -13,13 +13,14 @@ const ExperiencePage = () => {
       description:
         'Partnering with startups, small businesses, and agencies to engineer responsive, high-performance web applications and digital platforms from concept to production deployment.',
       highlights: [
-        'Engineered and deployed custom client websites including Zentrixa Marketing, translating non-technical creative visions into high-converting web apps.',
+        'Engineered and deployed custom client platforms including Bellaro.pk (handcrafted footwear & perfumes) and Zentrixa Marketing, translating client requirements into high-converting web apps.',
         'Architected end-to-end full-stack applications utilizing Next.js, React, Node.js, TypeScript, and MongoDB/Oracle DB.',
         'Established CI/CD deployment pipelines on Vercel and Oracle Cloud Infrastructure (OCI) with zero-downtime workflows.',
         'Maintained active development across 60+ GitHub repositories adhering to clean architecture, type safety, and responsive UI/UX principles.'
       ],
-      skills: ['Next.js', 'React', 'TypeScript', 'Node.js', 'Drizzle ORM', 'Neon PostgreSQL', 'Better-Auth', 'Tailwind CSS', 'Vercel'],
+      skills: ['Next.js', 'React', 'TypeScript', 'Node.js', 'Drizzle ORM', 'Neon PostgreSQL', 'Better-Auth', 'Cloudinary', 'Tailwind CSS', 'Vercel'],
       deliverables: [
+        { name: 'Bellaro.pk Brand Store', link: 'https://bellaro.pk' },
         { name: 'Zentrixa Marketing Platform', link: 'https://zentrixamarketing.vercel.app/' },
         { name: 'Zarb Perfume Brand Store', link: 'https://zarb.store' },
         { name: 'Me2One E-Commerce Store', link: 'https://me2one.vercel.app' }

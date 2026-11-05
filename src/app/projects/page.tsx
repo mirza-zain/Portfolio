@@ -22,6 +22,21 @@ const ProjectPage = () => {
   const projects: ProjectItem[] = [
     {
       id: 1,
+      title: 'Bellaro.pk Brand Store',
+      category: 'Client & Commercial',
+      badge: 'Client Brand Store',
+      description: 'A direct-to-consumer e-commerce brand storefront engineered for Bellaro PK. Showcases handcrafted leather loafers, moccasins, slides, and signature perfumes with real-time cart drawer, Cloudinary media optimization, and automated push notifications.',
+      highlights: [
+        'Full-stack architecture built with Next.js 16 (React 19) App Router and Tailwind CSS v4',
+        'Relational schema engineered with Drizzle ORM and Neon Serverless PostgreSQL with Better-Auth integration',
+        'High-performance product media pipelines via Cloudinary with responsive mobile optimization and web push'
+      ],
+      skills: 'Next.js 16, TypeScript, Drizzle ORM, Neon PostgreSQL, Better-Auth, Cloudinary, Tailwind CSS, Vercel',
+      liveLink: 'https://bellaro.pk',
+      gitLink: 'https://github.com/mirza-zain/Bellaro-Store-Client-Project-',
+    },
+    {
+      id: 2,
       title: 'Zentrixa Marketing',
       category: 'Client & Commercial',
       badge: 'Client Work',
@@ -36,7 +51,7 @@ const ProjectPage = () => {
       gitLink: 'https://github.com/mirza-zain/zentrixamarketing-website/',
     },
     {
-      id: 2,
+      id: 3,
       title: 'Zarb Perfume Brand Store',
       category: 'Client & Commercial',
       badge: 'Commercial Brand',
@@ -51,8 +66,8 @@ const ProjectPage = () => {
       gitLink: 'https://github.com/mirza-zain/E-commerce',
     },
     {
-      id: 3,
-      title: 'E-commerce Store (Me2One)',
+      id: 4,
+      title: 'E-commerce Store (MartInn)',
       category: 'Client & Commercial',
       badge: 'Full Stack Store',
       description: 'A comprehensive full-stack e-commerce marketplace featuring multi-category product catalog, dynamic product variant matrices, stock control, checkout pipeline, and order tracking.',
@@ -62,11 +77,41 @@ const ProjectPage = () => {
         'Modern responsive store interface built with Next.js, Better-Auth, and Tailwind CSS'
       ],
       skills: 'Next.js, TypeScript, Drizzle ORM, Neon PostgreSQL, Better-Auth, Tailwind CSS',
-      liveLink: 'https://me2one.vercel.app',
+      liveLink: 'https://martinnn.vercel.app',
       gitLink: 'https://github.com/mirza-zain/Bazaar-Mart-Ecommerce-Store',
     },
     {
-      id: 4,
+      id: 5,
+      title: 'SpriteForge (AI Game Copilot)',
+      category: 'Full Stack & AI',
+      badge: 'Meta Hackathon',
+      description: 'An AI-powered 2D game copilot and sprite articulation engine built for the Meta Global AI Developer Hackathon. Synthesizes 100% transparent 16-bit pixel art, 4-state multi-frame animation cycles, playable in-browser HTML5 combat sandbox, and production-ready Godot 4 & Phaser 3 scripts via Meta Llama 3.1.',
+      highlights: [
+        'Meta Llama 3.1-8B engine generating Godot 4 GDScript, Phaser 3 scenes, and branching NPC dialogue trees',
+        'Procedural articulation engine synthesizing 16 animation frames (Walk, Idle, Strike, Bounce) with zero white-box artifacts',
+        'In-browser playable combat arena with WASD controls, real-time hitbox colliders, and retro 8-bit Web Audio SFX'
+      ],
+      skills: 'Next.js 16, TypeScript, Meta Llama 3.1, Groq SDK, Canvas 2D, Web Audio API, Tailwind CSS, Vercel',
+      liveLink: 'https://spriteforge.vercel.app',
+      gitLink: 'https://github.com/mirza-zain/spriteForge',
+    },
+    {
+      id: 6,
+      title: 'AgriShield AI (Crop Pathology Platform)',
+      category: 'Full Stack & AI',
+      badge: 'AI Builder Cup',
+      description: 'A multimodal plant pathology diagnosis, climate resilience, and treatment recommendation platform built for the AI Builder Cup. Combines Google Gemini multimodal vision, neural vernacular audio (Urdu & English), and live microclimate telemetry for smallholder farmers.',
+      highlights: [
+        'Multimodal crop disease scanner with computer vision lesion bounding boxes and severity rating',
+        'Conversational spoken guidance powered by Google Gemini Neural TTS (Aoede voice) with native RIFF WAV reconstruction',
+        'Live farm weather telemetry via Open-Meteo correlating humidity spikes with fungal spore incubation risk'
+      ],
+      skills: 'Next.js 15, TypeScript, Google Gemini Vision, Gemini TTS, Firebase, AWS S3, Tailwind CSS, PWA',
+      liveLink: 'https://agri-shieldai.vercel.app/',
+      gitLink: 'https://github.com/mirza-zain/AgriShield-AI',
+    },
+    {
+      id: 7,
       title: 'Asaan Taqreeb (Event Booking App)',
       category: 'Mobile Apps',
       badge: 'Featured Mobile App',
@@ -81,7 +126,7 @@ const ProjectPage = () => {
       gitLink: 'https://github.com/Asaan-Taqreeb/Asaan-Taqreeb-App',
     },
     {
-      id: 5,
+      id: 8,
       title: 'Missing Link (AI Resume ATS Analyzer)',
       category: 'Full Stack & AI',
       badge: 'AI Powered',
@@ -96,7 +141,7 @@ const ProjectPage = () => {
       gitLink: 'https://github.com/mirza-zain',
     },
     {
-      id: 6,
+      id: 9,
       title: 'AI Journal & Mood Analytics',
       category: 'Full Stack & AI',
       badge: 'AI Full Stack',
